@@ -1,2 +1,28 @@
+# Claude API
 anthropic
+
+# ニュース取得
 feedparser
+
+# TTS
+gTTS
+
+# 画像・動画処理
+Pillow
+moviepy
+numpy
+
+# Slack
+slack-bolt
+slack-sdk
+
+# YouTube
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+# スケジューラー
+schedule
+
+# 環境変数
+python-dotenv
