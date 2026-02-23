@@ -3,13 +3,18 @@ from pathlib import Path
 from PIL import ImageFont
 
 
-# 日本語フォントの候補（OS別に対応）
+# 日本語フォントの候補（優先順位順）
 _JP_FONT_CANDIDATES = [
-    # Linux (Noto CJK)
+    # Linux: IPA Gothic（このシステムで確認済み）
+    "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf",
+    "/usr/share/fonts/truetype/fonts-japanese-gothic.ttf",  # symlink alias
+    # Linux: Noto CJK
     "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
     "/usr/share/fonts/opentype/noto/NotoSansCJKjp-Bold.otf",
     "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc",
     "/usr/share/fonts/truetype/noto/NotoSansCJKjp-Regular.ttf",
+    # Linux: WenQuanYi
+    "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
     # macOS
     "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc",
     "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
