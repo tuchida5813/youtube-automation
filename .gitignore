@@ -5,6 +5,8 @@ youtube_credentials.json
 
 # 生成ファイル
 output/
+assets/background.png
+assets/thumbnail_base.png
 
 # Python
 __pycache__/
